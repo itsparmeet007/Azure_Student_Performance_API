@@ -1,6 +1,10 @@
 # 🎓 Student Performance Prediction API
 
 ![Live API](https://img.shields.io/badge/API-Live-green)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Flask](https://img.shields.io/badge/Flask-API-black)
+![Azure](https://img.shields.io/badge/Cloud-Azure-blue)
+![Deployment](https://img.shields.io/badge/Deployed%20on-Azure-success)
 
 
 **Author:** Parmeet Singh
