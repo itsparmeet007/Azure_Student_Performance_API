@@ -1,4 +1,4 @@
-# 🎓 Student Performance Prediction API
+# 🎓 Student Performance Prediction System
 
 ![Live API](https://img.shields.io/badge/API-Live-green)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -6,29 +6,39 @@
 ![Azure](https://img.shields.io/badge/Cloud-Azure-blue)
 ![Deployment](https://img.shields.io/badge/Deployed%20on-Azure-success)
 
+---
 
-**Author:** Parmeet Singh
+## 👨‍💻 Author
 
-A machine learning REST API that predicts a student’s final grade using a trained Random Forest model.
-The API is fully deployed on Azure and accessible over the internet.
+**Parmeet Singh**
 
 ---
 
-## 🚀 Live API
+## 🚀 Live Application
 
-```
-https://performanceapi-cjdzfkeygxcpb0dh.eastasia-01.azurewebsites.net
-```
+👉 https://performanceapi-cjdzfkeygxcpb0dh.eastasia-01.azurewebsites.net
 
 ---
 
-## 📌 Features
+## 📌 Overview
+
+A **full-stack Machine Learning web application** that predicts a student’s final grade using a trained Random Forest model.
+
+✔ REST API (Flask)
+✔ Web Interface (HTML Form)
+✔ Cloud Deployment (Azure)
+✔ CI/CD Pipeline (GitHub Actions)
+
+---
+
+## ✨ Features
 
 * Predict student performance using ML
-* REST API built with Flask
-* Deployed on cloud (Azure App Service)
-* CI/CD pipeline using GitHub Actions
-* Fast and scalable inference
+* Web-based UI for easy interaction
+* REST API support
+* Real-time prediction
+* Cloud deployment (Azure App Service)
+* Automated CI/CD using GitHub Actions
 
 ---
 
@@ -40,6 +50,7 @@ https://performanceapi-cjdzfkeygxcpb0dh.eastasia-01.azurewebsites.net
 * NumPy & Pandas
 * Joblib
 * Gunicorn
+* HTML (Frontend UI)
 * Azure App Service
 * GitHub Actions
 
@@ -48,50 +59,38 @@ https://performanceapi-cjdzfkeygxcpb0dh.eastasia-01.azurewebsites.net
 ## 📂 Project Structure
 
 ```
-├── app.py                # Flask API
+├── app.py                # Flask Application
 ├── model.pkl             # Trained ML model
 ├── features.json         # Feature order
 ├── requirements.txt      # Dependencies
+├── templates/
+│   └── index.html        # Frontend UI
 └── .github/workflows     # CI/CD pipeline
 ```
 
 ---
 
-## 🔗 API Endpoints
+## 🔗 Endpoints
 
 ### ✅ GET /
 
-Check if API is running
-
-**Response:**
-
-```
-API is running
-```
+Loads the web interface (HTML UI)
 
 ---
 
 ### ✅ POST /predict
 
-Predict student final grade
-
-**URL:**
-
-```
-/predict
-```
-
-**Method:** POST
-
-**Headers:**
-
-```
-Content-Type: application/json
-```
+Returns prediction in JSON format (API)
 
 ---
 
-## 📥 Example Request
+### ✅ POST /predict-form
+
+Handles form submission and displays prediction on the webpage
+
+---
+
+## 🧪 Example API Request
 
 ```json
 {
@@ -103,7 +102,7 @@ Content-Type: application/json
 
 ---
 
-## 📤 Example Response
+## 📤 Example API Response
 
 ```json
 {
@@ -113,39 +112,60 @@ Content-Type: application/json
 
 ---
 
+## 🖥️ Web Interface
+
+Users can:
+
+* Enter input values
+* Submit form
+* Get prediction instantly
+
+Example Output:
+
+```
+Predicted Final Grade: 19.28
+```
+
+---
+
 ## ⚙️ How It Works
 
-1. Input features are received via API
-2. Data is arranged based on `features.json`
-3. Model (`model.pkl`) processes input
-4. Prediction is returned as JSON
+1. User inputs data via form or API
+2. Flask receives the request
+3. Data is arranged using `features.json`
+4. Model (`model.pkl`) predicts output
+5. Result is returned (JSON or UI)
 
 ---
 
 ## 🔄 CI/CD Pipeline
 
-* Code pushed to GitHub
-* GitHub Actions automatically builds & deploys
-* Azure App Service hosts the API
+```
+GitHub → GitHub Actions → Azure App Service → Live Deployment
+```
+
+* Push code → auto deploy
+* No manual deployment required
 
 ---
 
 ## 🧪 Testing
 
-You can test the API using:
+You can test using:
 
 * Thunder Client (VS Code)
 * Postman
-* cURL
+* Browser (for UI)
 
 ---
 
 ## 📈 Future Improvements
 
+* Improve UI using Bootstrap
 * Add input validation
-* Add Swagger API documentation
-* Build frontend UI
-* Add logging & monitoring
+* Add authentication
+* Add Swagger documentation
+* Add charts/visualization
 * Improve model accuracy
 
 ---
@@ -155,10 +175,31 @@ You can test the API using:
 **Parmeet Singh**
 Aspiring ML Engineer / Data Scientist
 
-* Skilled in Python, Machine Learning, and Web APIs
+* Skilled in Python, Machine Learning, and Web Development
 * Interested in AI, Cloud, and Backend Development
 
 ---
+
+## 📬 Contact
+
+GitHub: https://github.com/itsparmeet007
+
+---
+
+## ⭐ Project Highlights
+
+✔ End-to-end ML deployment
+✔ Full-stack (UI + API)
+✔ Cloud-hosted application
+✔ CI/CD enabled
+✔ Real-time prediction system
+
+---
+
+## 📄 License
+
+This project is for educational purposes.
+
 
 ## 📬 Contact
 
